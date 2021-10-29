@@ -1,0 +1,52 @@
+/* RightLeg, LeftLeg, RightArm, LeftArm */
+/* Red, Blue, Pink, Green, Yellow */
+
+#result-color {
+    border-radius: 50%;
+    display: block;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+}
+
+#result-color.Red {
+    background-color: red;
+}
+#result-color.Blue {
+    background-color: blue;
+}
+#result-color.Pink {
+    background-color: pink;
+}
+#result-color.Green {
+    background-color: green;
+}
+#result-color.Yellow {
+    background-color: yellow;
+}
+
+#result-limb {
+    display: block;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+}
+
+#result-limb.RightLeg {
+    background: url("./images/leg.png") no-repeat center center;
+    background-size: cover;
+    transform: scale(-1, 1);
+}
+#result-limb.LeftLeg {
+    background: url("./images/leg.png") no-repeat center center;
+    background-size: cover;
+}
+#result-limb.RightArm {
+    background: url("./images/arm.png") no-repeat center center;
+    background-size: cover;
+}
+#result-limb.LeftArm {
+    background: url("./images/arm.png") no-repeat center center;
+    background-size: cover;
+    transform: scale(-1, 1);
+}
