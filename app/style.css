@@ -1,5 +1,75 @@
-/* RightLeg, LeftLeg, RightArm, LeftArm */
-/* Red, Blue, Pink, Green, Yellow */
+body, html {
+    background-color: #303030;
+    margin: 0;
+    padding: 0;
+}
+
+.app-block {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "Roboto Thin", sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+}
+
+.title, .colors-in-game__text {
+    text-align: center;
+}
+
+.colors-in-game {
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+.colors__label {
+    cursor: pointer;
+}
+
+.continue-button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px auto;
+    padding: 10px;
+    position: relative;
+    user-select: none;
+    width: 70%;
+}
+
+.continue-button:hover {
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+.continue-button:active,
+.continue-button:focus {
+    outline: none;
+}
+
+.result {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#result-text {
+    flex-basis: 70%;
+    margin: 10px;
+    text-align: center;
+}
 
 #result-color {
     border-radius: 50%;
@@ -49,4 +119,10 @@
     background: url("./images/arm.png") no-repeat center center;
     background-size: cover;
     transform: scale(-1, 1);
+}
+
+@media screen and (max-width: 540px) {
+    .app-block {
+        width: 90%;
+    }
 }

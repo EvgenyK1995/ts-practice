@@ -23,6 +23,14 @@ var Colors;
     Colors[Colors["Green"] = 3] = "Green";
     Colors[Colors["Yellow"] = 4] = "Yellow";
 })(Colors || (Colors = {}));
+var ColorsValues;
+(function (ColorsValues) {
+    ColorsValues[ColorsValues["\u043A\u0440\u0430\u0441\u043D\u044B\u0439"] = 0] = "\u043A\u0440\u0430\u0441\u043D\u044B\u0439";
+    ColorsValues[ColorsValues["\u0441\u0438\u043D\u0438\u0439"] = 1] = "\u0441\u0438\u043D\u0438\u0439";
+    ColorsValues[ColorsValues["\u0440\u043E\u0437\u043E\u0432\u044B\u0439"] = 2] = "\u0440\u043E\u0437\u043E\u0432\u044B\u0439";
+    ColorsValues[ColorsValues["\u0437\u0435\u043B\u0451\u043D\u044B\u0439"] = 3] = "\u0437\u0435\u043B\u0451\u043D\u044B\u0439";
+    ColorsValues[ColorsValues["\u0436\u0451\u043B\u0442\u044B\u0439"] = 4] = "\u0436\u0451\u043B\u0442\u044B\u0439";
+})(ColorsValues || (ColorsValues = {}));
 function getCountOfColors() {
     const radios = document.querySelectorAll('input[name="colors"]');
     for (let radio of radios) {
@@ -46,5 +54,5 @@ function setParametersOfGame() {
     const limbText = document.getElementById('result-text');
     colorImage.className = Colors[randomColor];
     limbImage.className = Limbs[randomLimb];
-    limbText.textContent = LimbsValues[randomLimb];
+    limbText.textContent = LimbsValues[randomLimb] + ' на ' + ColorsValues[randomColor];
 }

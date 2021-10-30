@@ -4,6 +4,7 @@ const limbs: number = 4;
 enum Limbs { RightLeg, LeftLeg, RightArm, LeftArm}
 enum LimbsValues { 'Правая нога', 'Левая нога', 'Правая рука', 'Левая рука'}
 enum Colors { Red, Blue, Pink, Green, Yellow}
+enum ColorsValues { 'красный', 'синий', 'розовый', 'зелёный', 'жёлтый' }
 
 function getCountOfColors():number {
   const radios = document.querySelectorAll('input[name="colors"]');
@@ -33,5 +34,5 @@ function setParametersOfGame():void {
 
   colorImage.className = Colors[randomColor]
   limbImage.className = Limbs[randomLimb]
-  limbText.textContent = LimbsValues[randomLimb]
+  limbText.textContent = LimbsValues[randomLimb] + ' на ' + ColorsValues[randomColor]
 }

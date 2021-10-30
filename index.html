@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Twister</title>
         <link rel="stylesheet" href="./app/style.css" />
     </head>
     <body>
-        <div class="controls-panel">
-            <h1>Количество цветов в игре</h1>
-            <label for="three">
-                <input name="colors" id="three" type="radio" value="3" checked /> 3
-            </label>
+        <div class="app-block">
+            <h1 class="title">Twister</h1>
+            <p class="colors-in-game__text">количество цветов в игре</p>
+            <div class="colors-in-game">
+                <label class="colors__label" for="three">
+                    <input name="colors" id="three" type="radio" value="3" checked /> 3
+                </label>
 
-            <label for="four">
-                <input name="colors" id="four" type="radio" value="4" /> 4
-            </label>
+                <label class="colors__label" for="four">
+                    <input name="colors" id="four" type="radio" value="4" /> 4
+                </label>
 
-            <label for="five">
-                <input name="colors" id="five" type="radio" value="5" /> 5
-            </label>
-        </div>
-        <button class="continue-button">
-            ЖМАКНУТЬ
-        </button>
-        <div class="result">
-            <span id="result-color"></span>
-            <span id="result-limb"></span>
-            <span id="result-text"></span>
+                <label class="colors__label" for="five">
+                    <input name="colors" id="five" type="radio" value="5" /> 5
+                </label>
+            </div>
+            <button class="continue-button">
+                ЖМАКНУТЬ
+            </button>
+            <div class="result">
+                <span id="result-limb"></span>
+                <span id="result-color"></span>
+                <span id="result-text"></span>
+            </div>
         </div>
 
         <script type="text/javascript" src="build/app/script.js"></script>
